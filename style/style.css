@@ -3,9 +3,59 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*************************UTILITIES**********************************/
+.big-cont {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
 /*************************HEADER NAV*********************************/
 nav {
   height: 80px;
   background-color: gold;
 }
+.flex-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-right,
+.nav-left {
+  width: 100px;
+  height: 100%;
+  border: 2px dashed black;
+}
+.flex {
+  display: flex;
+}
 /************************JUMBO*****************************************/
+.jumbo {
+  height: 740px;
+  background-color: purple;
+}
+.t1 {
+  height: 100px;
+  width: 100%;
+  background-color: aqua;
+}
+.flex-h {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.main-jumbo {
+  display: flex;
+  align-items: flex-end;
+  height: 70%;
+  width: 100%;
+}
+.content {
+  width: 40%;
+  height: 100%;
+  background-color: aquamarine;
+}
+.img {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(255, 200, 127);
+}
