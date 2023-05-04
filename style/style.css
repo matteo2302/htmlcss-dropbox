@@ -357,23 +357,26 @@ h5 {
 .designit-description:last-child p {
   margin-top: 40px;
 }
+/***********************************?******************************/
 .dopbox-in-agency {
   height: 350px;
-  background-color: coral;
+  background-color: rgb(180, 208, 231);
 }
 .dopbox-in-agency-after {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-.button-f {
-  width: 50%;
-  height: 40px;
+.h2-business {
+  font-size: 45px;
+  width: 55%;
+  color: rgb(97, 8, 43);
 }
-.t3 {
-  width: 50%;
-  height: 40px;
-  background-color: darkolivegreen;
+.b-business {
+  background-color: white;
+  color: black;
+  border: none;
 }
+
 /******************************most frequent questions*********************/
 .question-box {
   margin-top: 200px;
