@@ -22,6 +22,16 @@
   justify-content: center;
   align-items: center;
 }
+button {
+  background-color: rgb(0, 97, 255);
+  border: none;
+  color: white;
+}
+.button {
+  width: 204px;
+  font-size: 16px;
+  height: 51px;
+}
 /*************************HEADER NAV*********************************/
 nav {
   width: 100%;
@@ -46,25 +56,25 @@ nav div > a {
 .nav-left {
   height: 35%;
 }
-nav div > button {
-  background-color: rgb(0, 97, 255);
+.header-button {
   padding: 10px 20px;
-  color: white;
+
   margin-right: 10px;
   vertical-align: middle;
   text-align: center;
   font-size: 20px;
-  border: none;
 }
 /************************JUMBO*****************************************/
 .jumbo {
   height: 740px;
-  background-color: purple;
+  background-color: rgb(180, 208, 231);
 }
-.t1 {
-  height: 100px;
+h1 {
+  height: 63%;
   width: 100%;
-  background-color: aqua;
+  margin-top: 80px;
+  font-weight: 900;
+  font-size: 70px;
 }
 
 .flex-jumbo,
@@ -77,18 +87,31 @@ nav div > button {
   justify-content: flex-end;
 }
 .main-jumbo {
-  height: 70%;
+  height: 100%;
   width: 100%;
+  position: relative;
 }
 .content {
-  width: 40%;
+  width: 30%;
   height: 100%;
-  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.img {
-  width: 60%;
-  height: 100%;
-  background-color: rgb(255, 200, 127);
+.content p {
+  line-height: 23px;
+  font-size: 16px;
+  font-weight: 100;
+}
+.fa-arrow-down {
+  font-size: 50px;
+  margin: 20px 0 10px;
+}
+
+.jumbo-img {
+  position: absolute;
+  top: 0;
+  max-width: 72%;
 }
 /********************************MAIN*****************************************/
 .t2 {
@@ -193,7 +216,6 @@ nav div > button {
 .button {
   width: 50%;
   height: 40px;
-  background-color: darkolivegreen;
 }
 .t3 {
   width: 50%;
