@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 /*************************UTILITIES**********************************/
 .big-cont {
@@ -17,23 +18,44 @@
 .flex {
   display: flex;
 }
+.centering-row {
+  justify-content: center;
+  align-items: center;
+}
 /*************************HEADER NAV*********************************/
 nav {
   width: 100%;
   height: 80px;
-  background-color: gold;
-
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
-
+.logo-small {
+  width: 130px;
+  height: 100%;
+}
+.nav-box {
+  gap: 30px;
+}
+nav div > a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+}
 .nav-right,
 .nav-left {
-  width: 100px;
-  height: 100%;
-  border: 2px dashed black;
+  height: 35%;
 }
-
+nav div > button {
+  background-color: rgb(0, 97, 255);
+  padding: 10px 20px;
+  color: white;
+  margin-right: 10px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 20px;
+  border: none;
+}
 /************************JUMBO*****************************************/
 .jumbo {
   height: 740px;
