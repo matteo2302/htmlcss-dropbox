@@ -42,6 +42,9 @@ nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
 }
 .logo-small {
   width: 130px;
@@ -71,6 +74,7 @@ nav div > a {
 .jumbo {
   height: 740px;
   background-color: rgb(180, 208, 231);
+  padding-top: 80px;
 }
 h1 {
   height: 63%;
@@ -405,19 +409,40 @@ h5 {
 
 /****************************footer***************************************/
 footer {
-  height: 700px;
+  height: 590px;
   background-color: black;
   margin-top: 80px;
+  color: white;
 }
 .footer-box {
-  align-items: center;
   width: 100%;
-  height: 80%;
+  height: 100%;
   margin-bottom: 30px;
 }
-.info {
-  background-color: blanchedalmond;
-  border: 2px dashed black;
-  height: 100%;
+.footer-list-box {
+  margin-top: 100px;
+  line-height: 20px;
   width: calc(100% / 5);
+}
+.bigger-list {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+footer li {
+  list-style: none;
+  line-height: 40px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer i {
+  margin: 0 4px;
+}
+.language {
+  border-top: 1px solid grey;
+  width: 45%;
+  padding-top: 30px;
+  color: rgb(153, 153, 153);
 }
