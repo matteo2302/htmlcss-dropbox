@@ -385,7 +385,7 @@ h5 {
 }
 
 /******************************most frequent questions*********************/
-.question-box {
+.frequent-question-box {
   margin-top: 200px;
 }
 .question-box h2 {
@@ -398,27 +398,42 @@ h5 {
   border-top: 1px solid rgb(153, 153, 153);
 }
 .questions {
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100px;
 }
-.question-box-hover p {
+.questions-all {
+  border-bottom: 1px solid rgb(153, 153, 153);
+  position: relative;
+}
+.questions-all i {
+  border-bottom: 1px solid rgb(153, 153, 153);
+}
+.questions-all p {
   display: none;
 }
-.question-box-hover :hover {
-  border-bottom: 1px solid rgb(153, 153, 153);
-  width: 100%;
-  height: 100px;
+.questions-all :hover + p {
+  display: block;
+  padding-bottom: 20px;
 }
-
-.question-ul .questions {
-  border-bottom: 1px solid rgb(153, 153, 153);
-  width: 100%;
-  height: 100px;
+.questions-all :hover .fa-chevron-down {
+  opacity: 0;
+}
+.questions-all :hover .fa-chevron-up {
+  opacity: 1;
 }
 .fa-chevron-down {
   font-size: 12px;
   margin-right: 25px;
+  border: none;
+}
+.fa-chevron-up {
+  position: absolute;
+  right: 24px;
+  opacity: 0;
+  font-size: 12px;
 }
 
 /****************************footer***************************************/
