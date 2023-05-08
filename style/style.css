@@ -73,7 +73,7 @@ nav div > a {
   margin-right: 10px;
   vertical-align: middle;
   text-align: center;
-  font-size: 20px;
+  font-size: 20px; /**********************************************************************************************************/
 }
 /************************JUMBO*****************************************/
 .jumbo {
@@ -107,7 +107,7 @@ h1 {
 }
 .content p {
   line-height: 23px;
-  font-size: 16px;
+  font-size: 16px; /**********************************************************************************************************/
   font-weight: 100;
 }
 .fa-arrow-down {
@@ -121,10 +121,10 @@ h1 {
   max-width: 72%;
 }
 /********************************MAIN*****************************************/
-.h2 {
+h2 {
   line-height: 100px;
   vertical-align: middle;
-  font-size: 40px;
+  font-size: 50px;
   margin-top: var(--margin-t-xl);
 }
 .circle {
@@ -243,7 +243,6 @@ h5 {
   border: 1px solid black;
   color: black;
   font-size: 16px;
-  height: 40px;
   width: 150px;
 }
 /***********************************OPERATIONS*************************/
@@ -260,18 +259,13 @@ h5 {
   margin-top: var(--margin-t-xs);
 }
 .cards-box p {
-  font-size: 16px;
   margin-top: var(--margin-t-xs);
 }
 /**********************************DROPBOX BUSINESS*********************/
-.businees-t {
-  width: 70%;
-}
 .businees-t h2 {
   line-height: 50px;
-  font-size: 50px;
-  line-height: 50px;
   margin-bottom: 70px;
+  width: 70%;
 }
 .agency-box {
   margin-top: var(--margin-t);
@@ -323,7 +317,6 @@ h5 {
 }
 .h2-designt {
   margin-top: var(--margin-t-xs);
-  font-size: 80px;
 }
 .designt-box {
   width: 85%;
@@ -340,7 +333,6 @@ h5 {
 }
 .designit-description {
   margin-top: var(--margin-t-xs);
-  font-size: 16px;
 }
 .designit-description:last-child p {
   margin-top: var(--margin-t-xs);
@@ -351,9 +343,9 @@ h5 {
   background-color: rgb(180, 208, 231);
 }
 .h2-business {
-  font-size: 45px;
   width: 55%;
   color: rgb(97, 8, 43);
+  margin-top: 0;
 }
 .b-business {
   background-color: white;
