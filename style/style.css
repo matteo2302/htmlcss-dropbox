@@ -41,12 +41,13 @@ button {
 .align-cent {
   align-items: center;
 }
+.justify-cont-sb {
+  justify-content: space-between;
+}
 /*************************HEADER NAV*********************************/
 nav {
   width: 100%;
   height: 80px;
-  align-items: center;
-  justify-content: space-between;
   position: fixed;
   z-index: 1;
   background-color: white;
@@ -87,8 +88,6 @@ h1 {
   font-weight: 900;
   font-size: 70px;
 }
-
-.flex-jumbo,
 .main-jumbo {
   align-items: flex-end;
 }
@@ -105,7 +104,6 @@ h1 {
   width: 30%;
   height: 100%;
   flex-direction: column;
-  justify-content: space-between;
 }
 .content p {
   line-height: 23px;
@@ -149,14 +147,12 @@ h1 {
 .payment-cards {
   width: 100%;
   height: 920px;
-  justify-content: space-between;
 }
 .payment-column {
   width: 28%;
   height: 100%;
   border: 1px solid rgb(208, 208, 211);
   flex-direction: column;
-  align-items: center;
 }
 .card-t {
   height: 30px;
@@ -165,7 +161,6 @@ h1 {
 }
 .cards-content {
   flex-direction: column;
-  justify-content: space-between;
   width: 80%;
   margin-top: var(--margin-t-xs);
   font-size: 15px;
@@ -180,8 +175,12 @@ h1 {
 .card-advanteg,
 .card-middle,
 .card-end {
-  margin-top: var(--margin-t-xs);
+  margin-bottom: 40px;
   line-height: 22px;
+}
+.division {
+  width: 30%;
+  border-bottom: 1px solid grey;
 }
 h3 {
   font-size: 25px;
@@ -207,7 +206,6 @@ h5 {
 }
 .contact-box {
   padding: 40px 15px;
-  justify-content: space-between;
 }
 .contact-box h3 {
   margin-bottom: 20px;
@@ -224,11 +222,9 @@ h5 {
   width: 100%;
   height: 500px;
   margin-top: var(--margin-t);
-  justify-content: space-between;
 }
 .main-img {
   width: 60%;
-  height: 100%;
 }
 .partner {
   width: 100%;
@@ -277,9 +273,7 @@ h5 {
   line-height: 50px;
   margin-bottom: 70px;
 }
-
 .agency-box {
-  justify-content: space-between;
   margin-top: var(--margin-t);
 }
 .agency {
@@ -290,7 +284,6 @@ h5 {
 .logos {
   width: 50%;
   height: 50%;
-  color: white;
   border: 15px solid transparent;
 }
 .logos:hover {
@@ -357,9 +350,6 @@ h5 {
   height: 350px;
   background-color: rgb(180, 208, 231);
 }
-.dopbox-in-agency-after {
-  justify-content: space-between;
-}
 .h2-business {
   font-size: 45px;
   width: 55%;
@@ -370,7 +360,6 @@ h5 {
   color: black;
   border: none;
 }
-
 /******************************most frequent questions*********************/
 .frequent-question-box {
   margin-top: var(--margin-t-xl);
@@ -382,7 +371,6 @@ h5 {
   border-top: 1px solid rgb(153, 153, 153);
 }
 .questions {
-  justify-content: space-between;
   width: 100%;
   height: 100px;
 }
@@ -436,7 +424,6 @@ footer {
 }
 .bigger-list {
   flex-direction: column;
-  justify-content: space-between;
   height: 90%;
 }
 footer li {
