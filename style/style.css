@@ -4,6 +4,12 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+:root {
+  --margin-t-xs: 40px;
+  --margin-t-s: 70px;
+  --margin-t: 100px;
+  --margin-t-xl: 200px;
+}
 /*************************UTILITIES**********************************/
 .big-cont {
   width: 1200px;
@@ -40,7 +46,6 @@ nav {
   width: 100%;
   height: 80px;
   align-items: center;
-  display: flex;
   justify-content: space-between;
   position: fixed;
   z-index: 1;
@@ -64,7 +69,6 @@ nav div > a {
 }
 .header-button {
   padding: 10px 20px;
-
   margin-right: 10px;
   vertical-align: middle;
   text-align: center;
@@ -79,14 +83,13 @@ nav div > a {
 h1 {
   height: 63%;
   width: 100%;
-  margin-top: 80px;
+  margin-top: var(--margin-t);
   font-weight: 900;
   font-size: 70px;
 }
 
 .flex-jumbo,
 .main-jumbo {
-  display: flex;
   align-items: flex-end;
 }
 .flex-jumbo {
@@ -101,7 +104,6 @@ h1 {
 .content {
   width: 30%;
   height: 100%;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -125,7 +127,7 @@ h1 {
   line-height: 100px;
   vertical-align: middle;
   font-size: 40px;
-  margin-top: 150px;
+  margin-top: var(--margin-t-xl);
 }
 .circle {
   width: 20px;
@@ -143,26 +145,20 @@ h1 {
 .payment {
   width: 30%;
   height: 75px;
-  display: flex;
-  align-items: center;
 }
 .payment-cards {
   width: 100%;
-  height: 870px;
-
+  height: 920px;
   justify-content: space-between;
 }
 .payment-column {
   width: 28%;
   height: 100%;
   border: 1px solid rgb(208, 208, 211);
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
 .card-t {
-  align-items: center;
-  justify-content: center;
   height: 30px;
   width: 100%;
   border-bottom: 1px solid rgb(208, 208, 211);
@@ -171,7 +167,7 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   width: 80%;
-  margin-top: 30px;
+  margin-top: var(--margin-t-xs);
   font-size: 15px;
 }
 .cards-content i {
@@ -184,7 +180,7 @@ h1 {
 .card-advanteg,
 .card-middle,
 .card-end {
-  margin-bottom: 40px;
+  margin-top: var(--margin-t-xs);
   line-height: 22px;
 }
 h3 {
@@ -204,21 +200,20 @@ h5 {
   font-size: 15px;
 }
 .contact-b {
-  margin-top: 80px;
+  margin-top: var(--margin-t-s);
   width: 100%;
   height: 240px;
   border: 1px solid rgb(208, 208, 211);
 }
 .contact-box {
-  margin: 40px 15px;
+  padding: 40px 15px;
   justify-content: space-between;
 }
 .contact-box h3 {
   margin-bottom: 20px;
 }
 .contact-box h5 {
-  margin-bottom: 50px;
-  margin-top: 20px;
+  margin-top: var(--margin-t-s);
   padding: 0;
 }
 .contact-info {
@@ -228,9 +223,8 @@ h5 {
 .enter-contact {
   width: 100%;
   height: 500px;
-  margin-top: 100px;
+  margin-top: var(--margin-t);
   justify-content: space-between;
-  margin-bottom: 150px;
 }
 .main-img {
   width: 60%;
@@ -243,11 +237,10 @@ h5 {
   flex-direction: column;
   height: 70%;
   width: 33%;
-
-  margin-top: 40px;
+  margin-top: var(--margin-t-xs);
 }
 .main-comment * {
-  margin-bottom: 45px;
+  margin-bottom: 70px;
 }
 .button-partner {
   background-color: white;
@@ -268,18 +261,15 @@ h5 {
   height: 50%;
   width: calc((100% - 30px) / 3);
   margin-right: 10px;
-  margin-bottom: 30px;
-}
-.cards-box h3 {
-  margin-bottom: 40px;
+  margin-top: var(--margin-t-xs);
 }
 .cards-box p {
   font-size: 16px;
+  margin-top: var(--margin-t-xs);
 }
 /**********************************DROPBOX BUSINESS*********************/
 .businees-t {
   width: 70%;
-  margin-bottom: 100px;
 }
 .businees-t h2 {
   line-height: 50px;
@@ -290,6 +280,7 @@ h5 {
 
 .agency-box {
   justify-content: space-between;
+  margin-top: var(--margin-t);
 }
 .agency {
   width: calc(100% / 3);
@@ -300,7 +291,6 @@ h5 {
   width: 50%;
   height: 50%;
   color: white;
-  display: flex;
   border: 15px solid transparent;
 }
 .logos:hover {
@@ -339,15 +329,12 @@ h5 {
   height: calc(12% + 15px);
 }
 .h2-designt {
-  margin-top: 40px;
+  margin-top: var(--margin-t-xs);
   font-size: 80px;
 }
 .designt-box {
   width: 85%;
   margin: auto;
-}
-.designt-top {
-  margin-bottom: 40px;
 }
 .designt {
   width: calc(100% / 3);
@@ -356,13 +343,14 @@ h5 {
 .border {
   width: 20%;
   border: 1px solid rgb(208, 208, 211);
+  margin-top: var(--margin-t-xs);
 }
 .designit-description {
-  margin-top: 40px;
+  margin-top: var(--margin-t-xs);
   font-size: 16px;
 }
 .designit-description:last-child p {
-  margin-top: 40px;
+  margin-top: var(--margin-t-xs);
 }
 /***********************************?******************************/
 .dopbox-in-agency {
@@ -371,7 +359,6 @@ h5 {
 }
 .dopbox-in-agency-after {
   justify-content: space-between;
-  align-items: center;
 }
 .h2-business {
   font-size: 45px;
@@ -386,10 +373,7 @@ h5 {
 
 /******************************most frequent questions*********************/
 .frequent-question-box {
-  margin-top: 200px;
-}
-.question-box h2 {
-  margin-bottom: 50px;
+  margin-top: var(--margin-t-xl);
 }
 .question-box h5 {
   padding: 25px 0;
@@ -399,8 +383,6 @@ h5 {
 }
 .questions {
   justify-content: space-between;
-  align-items: center;
-  display: flex;
   width: 100%;
   height: 100px;
 }
@@ -440,16 +422,15 @@ h5 {
 footer {
   height: 590px;
   background-color: black;
-  margin-top: 80px;
+  margin-top: var(--margin-t);
   color: white;
 }
 .footer-box {
   width: 100%;
   height: 100%;
-  margin-bottom: 30px;
 }
 .footer-list-box {
-  margin-top: 100px;
+  margin-top: var(--margin-t);
   line-height: 20px;
   width: calc(100% / 5);
 }
